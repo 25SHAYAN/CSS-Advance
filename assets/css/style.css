@@ -1,0 +1,260 @@
+
+/*   p1.html     */
+.title{
+    background-color: gold;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.title>h1{
+    color: red;
+}
+.title>p{
+    color: blanchedalmond;
+    font-size: 20px;
+}
+/* comman class*/
+.comman  {
+    background-color: aqua;
+    padding: 30px;
+    margin: 30px;
+    border: 3px solid #ccc;
+}
+.cssOutLine{
+    outline: 3px solid #000;
+    border-radius: 10px;
+}
+
+/*      p3.html           */
+.cssOverflow>p{
+    text-align: justify;
+    line-height: 2;
+    border: 2px solid black;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    overflow:auto ;
+}
+.cssOverflow>p:last-child{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/*      p4.html       */
+.cssWhiteSpace{
+    white-space: break-spaces;
+}
+
+/*p5 html code*/
+.cssUnits>h3:nth-child(1){
+    margin: 0.5in;/*  1in is eqaull to 2.54cm*/
+}
+.cssUnits>h3:nth-child(2){
+    line-height: 3cm;/* centimeters */
+}
+.cssUnits>h3:nth-child(3){
+   word-spacing: 4mm;/*milimeters */
+}
+.cssUnits>h3:nth-child(4){
+    font-size: 12pt;/*points */
+}
+.cssUnits>h3:nth-child(5){
+font-size: 1pc;/*picas */
+}
+.cssUnits>h3:nth-child(6){
+    font-size: 12px;/*pixel */
+}
+
+
+/* p6 html*/
+.cssVisibilityDisplay>p{
+    background-color: teal;
+    padding: 20px;
+    border: 5px solid rgb(237, 38, 15);
+}
+.cssVisibilityDisplay>.cssVisibility{
+    visibility: hidden;
+}
+.cssVisibilityDisplay>.cssDisplay{
+    display: none;
+}
+
+/* p7 html*/
+
+.cssWordWrap>p{
+    background-color: #ccc;
+    padding: 20px;
+    width: 300px;
+    word-wrap: break-word;
+}
+
+/*p8 html*/
+.cssResize{
+    resize:both;
+    overflow: auto;
+    background-color: blue;
+}
+/*p9 html*/
+.cssoffsetoutline{
+
+    outline: 3px solid black;
+    outline-offset: 12px;
+
+}
+/*p10*/
+.csscolumncount{
+    line-height: 2;
+    text-align: justify;
+}
+.csscolumncount>div{
+   column-count: 5;
+    column-gap: 50px;
+    column-rule: 2px solid orange;
+    /*column-width:200px;*/  /*we can use either width or count for colume  width*/
+
+}
+    
+
+/*p11       */
+.cssOpacity>p{
+    background-color: red;
+    color: wheat;
+    padding: 20px;
+    opacity: 0.2;
+}
+
+.cssOpacity>div{
+    background-color: rgba(128,128,128,0.4);
+    color: rgba(225,225,225,0.5);
+    padding: 20px;
+
+}
+/*p12*/
+/*eg1*/
+.cssattribute>h1{
+    color:brown;
+}
+.cssattribute>p{
+    color: blue;
+}
+.cssattribute>[title]{
+    background-color: yellow;
+}
+.cssattribute>p[title]{
+    padding: 20px;
+}
+.cssattribute>h1[title]{
+    font-style: italic;
+}
+/*eg2*/
+.cssattribute>p>abbr[id]  /* we can also use abbr[title]*/{
+    background-color: red;
+    color: yellow;
+}
+/*eg 3*/
+.cssattribute>form>[type]  /*can use id or type*/{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+}
+.cssattribute>form>[type="text"]{
+    border: 2px solid green;
+    border-radius:5px ;
+}
+.cssattribute>form>[type="submit"]{
+    background-color: aquamarine;
+    border: 2px  solid red;
+}
+/*p13*/
+.cssposition>h1:first-child,.cssposition>div>h1:first-child{
+    background-color: teal;
+}
+.cssposition>h1:nth-child(2),.cssposition>div>h1:nth-child(2){
+    background-color: tomato;
+}
+.cssposition>h1:nth-child(3),.cssposition>div>h1:last-child{
+    background-color: violet;
+}
+.cssposition h1{
+padding: 20px;
+color: #fff;
+}
+.cssposition>.second{
+    position: absolute;
+    left: 0px;
+    top: 0px;/*if we remove top and left than it will overlap with third */
+
+}
+.cssposition>div>.fifth{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.cssposition>div{
+    border: 2px solid #000;
+    padding: 20px;
+    position: relative;
+}
+.cssposition>.seven{
+    background-color: blue;
+}
+.cssposition>.eight{
+    background-color: crimson;
+    position: sticky;
+    top: 0%;   
+}
+.cssposition>.nine{
+    background-color: #000;
+    position: fixed;
+    top: 45%;
+    right: 0%;
+    border-radius: 5px;
+    transition: 2s;
+}
+.cssposition>.nine:hover{
+    right: 2%;
+    background-color: green;
+}
+  /*absolute tag is for body where as relative for current position*/
+
+  /*p14*/
+  .zindex>section{
+    width: 200px;
+    height: 150px;
+    padding: 20px;/*common for all section */
+    color: yellow;
+    position: absolute;/* all 1,2,3 are overlapping */
+  }
+  .zindex{
+    position: relative;
+    height: 300px;/*overlapped one on another */
+  }
+  .zindex>.first{
+    background-color: red;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+  .zindex>.second{
+    background-color: green;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+  }
+  .zindex>.third{
+    background-color: orangered;
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+  }
+  /*z index is to create stack nothing but layers */
+.zindex>.first:hover{
+    z-index: 4;/*4 means on top of 3rd layer we display 4 */
+}
+.zindex>.second:hover{
+    z-index: 4;
+    /*extra nange */
+    background-color: aquamarine;
+    transition: 2s;
+}
